@@ -26,10 +26,5 @@
 			<artifactId>sikuli-api</artifactId>
 			<version>1.1.0</version>
 		</dependency>
-		<dependency>
-			<groupId>mylibs</groupId>
-			<artifactId>mtf</artifactId>
-			<version>2.0</version>
-		</dependency>
 	</dependencies>
 </project>
