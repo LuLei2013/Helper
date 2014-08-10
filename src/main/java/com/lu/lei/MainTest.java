@@ -19,7 +19,7 @@ import org.sikuli.api.Target;
 public class MainTest {
 	static int captureHeight;
 	static int captureWidth;
-	static int rowNum;
+	static int rowNum;		
 	static int cowNum;
 	static int CardHeight;
 	static int CardWidth;
