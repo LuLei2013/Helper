@@ -6,9 +6,12 @@ import java.io.IOException;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Queue;
+
 import javax.imageio.ImageIO;
+
 import junit.framework.Assert;
-import org.sikuli.api.ImageTarget;
+
+import org.sikuli.api.ColorImageTarget;
 import org.sikuli.api.ScreenRegion;
 import org.sikuli.api.Target;
 
@@ -19,7 +22,7 @@ import org.sikuli.api.Target;
 public class MainTest {
 	static int captureHeight;
 	static int captureWidth;
-	static int rowNum;		
+	static int rowNum;
 	static int cowNum;
 	static int CardHeight;
 	static int CardWidth;
@@ -73,7 +76,7 @@ public class MainTest {
 					* (CardWidth + 1), (coordinate.getR() - 1)
 					* (CardHeight + 1), CardWidth - cowNum + 1, CardHeight
 					- rowNum + 1);
-			Target finaltarget = new ImageTarget(sonImage);
+			Target finaltarget = new ColorImageTarget(sonImage);
 			// set the similarity between the target region and the screenRegion
 			finaltarget.setMinScore(0.8);
 			List<ScreenRegion> finalRegions = sikuli.findAll(finaltarget);

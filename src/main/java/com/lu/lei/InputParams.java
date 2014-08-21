@@ -27,7 +27,7 @@ public class InputParams extends JFrame implements ActionListener {
 	private JLabel inputRowJLabel = new JLabel("rowsNum");
 	private JButton okButton = new JButton("OK");
 	private JButton resetButton = new JButton("RESET");
-	public boolean isFinised = false;
+	public volatile boolean isFinised = false;
 
 	public InputParams() {
 		super("Input the rows and cows");
